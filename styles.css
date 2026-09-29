@@ -13,3 +13,7 @@
 .publications .paper-title {
   display: block;
 }
+/* 恢复生成原图的清晰度 */
+.portrait img {
+  filter: none;
+}
