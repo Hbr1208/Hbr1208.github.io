@@ -4,3 +4,12 @@
 @media(max-width:620px){html{scroll-padding-top:120px}.header-inner{display:block;padding:14px 22px 12px}.wordmark{font-size:19px;margin-bottom:10px}nav{gap:0;justify-content:space-between;font-size:13px;flex-wrap:wrap;row-gap:8px}main{padding:0 22px}.profile{grid-template-columns:minmax(0,1fr);padding:34px 0;gap:27px}.profile-copy{min-width:0}.eyebrow{font-size:12px;letter-spacing:.1em}h1{font-size:40px}h1 span{display:inline-block;font-size:24px;margin-left:10px}.position{font-size:18px}.portrait{grid-row:2;justify-self:start;width:100%;display:flex;align-items:flex-end;gap:12px}.portrait img{width:150px;height:150px}.portrait figcaption{text-align:left;max-width:95px;font-size:12px;margin-bottom:3px}.section-row{display:block;padding:28px 0}h2{font-size:25px;margin-bottom:20px}h2 br{display:none}h2 br:after{content:" "}.interests{gap:12px}.timeline-entry,.teaching-entry{grid-template-columns:88px minmax(0,1fr);gap:15px}.date{font-size:13px}.timeline-entry strong,.teaching-entry strong{font-size:15px}.subheading{font-size:12px}.publications{padding-left:22px}.publications>li{padding-left:3px}.paper-title{font-size:16px}.authors,.venue{font-size:14px}.site-footer{margin:0 22px;display:block;padding:22px 0 28px}.site-footer a{display:inline-block;margin-top:4px}}
 .portrait img{filter:blur(2px) contrast(.60) brightness(.85)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.site-header,.skip-link,.paper-links,.cv-link{display:none}body{border:0;font-size:11pt}main{padding:0;max-width:none}.profile{padding:0 0 22px;grid-template-columns:1fr 140px;gap:20px}.portrait img{width:140px;height:140px}.portrait figcaption{font-size:9pt}.section-row{padding:20px 0;grid-template-columns:140px 1fr}.paper-title{color:#000}.publications>li{break-inside:avoid}.site-footer{margin:0}.interests{grid-template-columns:1fr 1fr}}
+/* 去掉头像下方的说明文字 */
+.portrait figcaption {
+  display: none;
+}
+
+/* 论文标题换行时，让序号对齐第一行 */
+.publications .paper-title {
+  display: block;
+}
